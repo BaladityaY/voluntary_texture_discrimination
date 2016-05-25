@@ -1,0 +1,29 @@
+# Time : Mon May  9 15:53:01 2016#
+# jitter : 0.08 
+# iti : 0.2 
+# demo : False 
+# cue_size : [2, 2] 
+# elem_size : 2.5 
+# subject : test 
+# monitor : CRT_NEC_FE992 
+# n_trials : 150 
+# res : 128 
+# cue_dur : 0.2 
+# full_screen : True 
+# middle_fix_dur : 0.5 
+# rgb : [ 1.  1.  1.] 
+# incorrect_sound : <psychopy.sound.SoundPygame instance at 0x7f77929fdb00> 
+# cue_to_ea : 0.6 
+# elem_spacing : 1 
+# fixation_size : 0.1 
+# correct_sound : <psychopy.sound.SoundPygame instance at 0x7f77929fd9e0> 
+# line_width : 5 
+# mask_dur : 0.2 
+# screen_number : 1 
+# elems_per_row : 30 
+# texture_dur : 0.15 
+# sf : 4 
+trial,target_ecc,correct,odd_first,neutral,rt 
+0,3.62068965517,0,0,0,7.35854101181 
+1,10.8620689655,0,1,1,5.63990306854 
+2,5.68965517241,0,0,1,7.5036239624 
