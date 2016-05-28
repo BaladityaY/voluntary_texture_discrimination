@@ -28,7 +28,7 @@ if __name__ == "__main__":
     #p.set_by_gui()
     
     #automatic parameters for quick testing
-    p.subject='test'
+    p.subject='SC'
     p.demo=False
     p.texture_dur = .150
     
