@@ -46,7 +46,7 @@ if __name__ == "__main__":
     f = start_data_file(p.subject)
     p.save(f)
     
-    f = save_data(f,'trial','target_ecc','correct','odd_first','neutral','rt')
+    f = save_data(f,'trial','target_ecc','correct','odd_first','neutral','rt','eye_moved')
     size = p.elems_per_row * p.elem_spacing
     pre_x = np.linspace(-size/2., size/2., p.elems_per_row) 
     pre_y = np.linspace(-p.elem_spacing, p.elem_spacing, 3) 
@@ -250,6 +250,7 @@ if __name__ == "__main__":
             correct_ans = ['num_2','2']
             
         response = False
+        eye_moved = 0
         while not response:
             for key in event.getKeys():
                 if key in ['escape','q']:
@@ -267,10 +268,15 @@ if __name__ == "__main__":
                         correct = 0
                         response = True
                         rt = clock.getTime()
+                elif key in ['0','9','num_0','num_9']:
+                    if '0' in key:
+                        eye_moved = 0
+                    else:
+                        eye_moved = 1
 
         core.wait(p.iti)
         event.clearEvents()  # keep the event buffer from overflowing
-        f = save_data(f,trial,odd_ecc,correct,int(odd_first),int(neutral_cue),rt)
+        f = save_data(f,trial,odd_ecc,correct,int(odd_first),int(neutral_cue),rt,eye_moved)
 
     win.close()
     f.close()
