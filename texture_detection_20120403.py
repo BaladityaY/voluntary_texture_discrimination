@@ -28,9 +28,9 @@ if __name__ == "__main__":
     #p.set_by_gui()
     
     #automatic parameters for quick testing
-    p.subject='SC'
+    p.subject='CH'
     p.demo=False
-    p.texture_dur = .150
+    p.texture_dur = .15
     
 
     calib.monitorFolder = './calibration/'# over-ride the usual setting of where
